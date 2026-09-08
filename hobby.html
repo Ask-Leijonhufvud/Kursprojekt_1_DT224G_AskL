@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asks Hemsida - Datorspel</title>
+    <!--CSS:
+    1. implementera mörkt läge
+    2. formatera kontakt-länk
+    3. formatera titel
+    4. formatera tabell
+    5. formatera RimWorld logga
+  -->
+    <style>
+      body {
+        background-color: black;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      summary {
+        color: white;
+      }
+
+      figcaption {
+        color: white;
+      }
+
+      th {
+        color: white;
+      }
+
+      td {
+        color: white;
+      }
+
+      a {
+        color: lightblue;
+      }
+
+      li {
+        color: white;
+      }
+
+      img[alt] {
+        color: white;
+      }
+
+      caption {
+        color: white;
+      }
+
+      .contact-link {
+        text-align: end;
+      }
+
+      .titel {
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      table {
+        border: 2px solid white;
+      }
+
+      th,
+      td {
+        border: 1px solid white;
+      }
+
+      thead,
+      tfoot {
+        background-color: gray;
+      }
+
+      tbody > tr:nth-of-type(even) {
+        background-color: gray;
+      }
+
+      .rimworld {
+        width: 256px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header med titel, undertitel, och huvudmeny-->
+    <header>
+      <div>
+        <p class="titel">Asks Hemsida</p>
+        <p>Behold! My stuff!</p>
+      </div>
+      <!--huvudmeny; startar öppen, kan kollapsas; nuvarande sida ej länk, märkt med <b>-->
+      <nav>
+        <details open>
+          <summary><strong>Huvudmeny</strong></summary>
+          <menu>
+            <li><a href="./">Startsida</a></li>
+            <li><b>Hobby: Datorspel</b></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </menu>
+        </details>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!--
+            Den här sidan handlar om ditt valda intresse. Sidan ska innehålla:
+                Minst två bilder med beskrivande alt-texter;
+                Minst två rubriknivåer (<h1>, <h2>);
+                Minst en paragraf med text där du kortfattat beskriver ditt valda intresse (<p>);
+                En tabell med relevant innehåll kopplat till ditt intresse, t.ex. en topplista, ett schema eller faktatabell. 
+                    Den ska innehålla minst fyra kolumner och tre rader. Tabellen ska ha korrekt struktur med <thead>, <tbody> och <th>;
+                En extern länk till en relevant webbplats, t.ex. en officiell sida eller Wikipedia, med target="_blank" och rel="noopener".
+            -->
+      <!--Outline:
+                1. Datorspel
+                    [faktatabell]
+                        namn
+                        utvecklare
+                        utgivningsår
+                        genre
+                        antal timmar spelat
+                    1. Jade Empire (article)
+                        section: kort beskrivning
+                        section: vad gillar jag
+                        section: vad gillar jag inte
+                        Section: spoilers (details)
+                    2. Rimworld
+                    3. SW:EaW
+                    4. SW:KotOR
+                    5. SW:KotOR II TSL
+            -->
+      <h1>Datorspel</h1>
+      <!--faktatabell öven mina datorspel-->
+      <table>
+        <caption>
+          Datorspel som jag spelar
+        </caption>
+        <!--rubrikrad i tabell-->
+        <thead>
+          <tr>
+            <th scope="col">Namn</th>
+            <th scope="col">Utvecklare</th>
+            <th scope="col">År</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Antal timmar spelat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--rad för jade empire-->
+          <tr>
+            <th scope="row"><cite>Jade Empire</cite></th>
+            <td>BioWare</td>
+            <td>2005</td>
+            <td>Actionrollspel</td>
+            <td>61+</td> <!--senast playthrough: 23+-->
+          </tr>
+          <!--rad för RimWorld-->
+          <tr>
+            <th scope="row"><cite>RimWorld</cite></th>
+            <td>Ludeon Studios</td>
+            <td>2013</td>
+            <td>Bygg- och managementspel</td>
+            <td>68+</td>
+            <!--2d20h-->
+          </tr>
+          <!--rad för empire at war-->
+          <tr>
+            <th scope="row"><cite>Star Wars: Empire at War</cite></th>
+            <td>Petroglyph Games</td>
+            <td>2006</td>
+            <td>Realtidsstrategi</td>
+            <td>23+</td>
+          </tr>
+          <!--rad för kotor-->
+          <tr>
+            <th scope="row">
+              <cite>Star Wars: Knights of the Old Republic</cite>
+            </th>
+            <td>BioWare</td>
+            <td>2003</td>
+            <td>Turbaserat rollspel</td>
+            <td>198+</td> <!-- 198h55m! -->
+          </tr>
+          <!--rad för kotor2-->
+          <tr>
+            <th scope="row">
+              <cite
+                >Star Wars: Knights of the Old Republic II: The Sith Lords</cite
+              >
+            </th>
+            <td>Obsidian Entertainment</td>
+            <td>2004</td>
+            <td>Turbaserat rollspel</td>
+            <td>63+</td>
+          </tr>
+        </tbody>
+        <!--rad för sammanlagd speltid-->
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Sammanlagd speltid</th>
+            <td>413+</td>
+          </tr>
+        </tfoot>
+      </table>
+      <!--sector för jade empire-->
+      <article>
+        <h2><cite>Jade Empire</cite></h2>
+        <!--cover art-->
+        <figure>
+          <img
+            src="./images/Jade_Empire_Coverart.png"
+            alt="Omslagsbilden till Jade Empire"
+          />
+          <figcaption>
+            Omslagbilden till <cite>Jade Empire</cite>. Från
+            <a
+              href="https://en.wikipedia.org/wiki/File:Jade_Empire_Coverart.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wikipedia</a
+            >.
+          </figcaption>
+        </figure>
+        <!--länk till engelsk wikipedia sida, finns ingen officiell sida-->
+        <p>
+          <a
+            href="https://en.wikipedia.org/wiki/Jade_Empire"
+            target="_blank"
+            rel="noopener noreferrer"
+            >[engelsk wikipedia sida]</a
+          >
+        </p>
+        <!--section: beskrivning av spel-->
+        <section>
+          <h3>Vad är <cite>Jade Empire</cite>?</h3>
+          <p>
+            <cite>Jade Empire</cite> är ett datorrollspel baserat på kinesisk
+            mytologi som utspelar sig i realtid. Spelaren tar rollen av en
+            student i en stridskonstskola som kastas in i ett farligt äventyr
+            efter att fientliga styrkor bränner ner skolan, dödar de flesta av
+            de andra studenterna, och tar mästaren till fånga.
+          </p>
+          <p>
+            Spelet tar (som sagt) plats i en värld inspirerad av kinesisk
+            mytologi och man kommer att interagera med ett stort antal
+            övernaturliga varelser av olika slag, dessutom finns det
+            flygmaskiner. Spelet tar huvudsakligen plats inom det land som
+            spelet är namngett efter (eller kanske det är tvärt om) vilket är
+            tydligt inspirerat av forna tiders kina. Tidigt i spelet får man
+            veta att ens mästare - Li - faktiskt är kejsarens - Sun Hais -
+            broder och för tjugo år sedan - när ens karaktär var en bebis -
+            räddade en från en massaker som leddes av Sun Hai. Själv är man den
+            enda överlevanden utav munkordern som massakerades -
+            <i>the Spirit Monks</i> - som agerade som väktare för en gudinna -
+            <i>the Water Dragon</i> - vars kraft kejsaren villa stjäla så att
+            han skulle kunna avbryta den torka som då drabbade imperiet. Strax
+            efter att man för veta detta kommer en grupp av kejsarens trupper -
+            specifikt an grupp av <i>Lotus Assassins</i> - som nu har upptäckt
+            vart Li gömmer sig, och tar Li till fånga, bränner ner skolan och
+            den närliggande byn, och dödar de flesta av invånarna. Tillsammans
+            med en av de andra överlevande studenterna - Dawn Star - samt ett
+            antal andra följare som man rekryterar längs vägen, ger du dig då ut
+            mot huvudstaden för att rädda Li.
+          </p>
+          <p>
+            Jag har redan spelat igenom spelet två gånger helt och hållet
+            (första gången jag körde igenom spelet missade jag några saker, så
+            jag gick tillbaka till en tidigare sparfil och spelade om från den;
+            sedan spelade jag om spelet helt från början för att se andra val).
+          </p>
+        </section>
+        <!--section: vad jag gillade-->
+        <section>
+          <h3>Vad gillar jag om <cite>Jade Empire</cite>?</h3>
+          <p>
+            Jag tycker att handlingen och världen är väldigt engagerande, så
+            spelet känns längre än det egentligen är - på ett bra sätt.
+          </p>
+          <p>
+            I spelet finns möjlighet att ingå i en romantisk relation med tre
+            olika karaktärer (två kvinnor och en man), och man kan ingå i en
+            romantisk relation med två av karaktärerna (mannen och en av
+            kvinnorna) vare sig ens spelkaraktär är manlig eller kvinnlig.
+            Dessutom finns det möjlighet för polyamori, en manlig karaktär kan
+            ingå i en romantisk relation med båda kvinnorna samtidigt. Allt det
+            här är en del av basspelet. Det finns mod som gör att båda kvinnor,
+            och därmed också den polyamoriska romanser, är tillgängliga för
+            kvinnliga spelkaraktärer.
+          </p>
+        </section>
+        <!--section: vad jag inte gillade-->
+        <section>
+          <h3>Vad gillar jag inte om <cite>Jade Empire</cite>?</h3>
+          <p>
+            Man har något begränsade valmöjligheter när man skapar sin karaktär:
+            man har ett mindre antal förskapade karaktärer att välja mellan, med
+            olika namn, utseende, prioritering mellan de tre egenskaperna, samt
+            stridsstil. Däremot kan man anpassa allt utom utseendet.
+          </p>
+          <p>
+            I strid kontrollerar man direkt hur ens karaktär rör sig och
+            attackerar, vilket inte är min favorit, men vid lägsta
+            svårighetsgraden har det inte varit något problem.
+          </p>
+          <p>
+            Det system av etiska filosofier som är i spelet (<i>Open Palm</i> vs
+            <i>Closed Fist</i>) beskrivs på ett sådant sätt att det verkar mer
+            komplext än gott-mot-ont, men implementationen av det är ofta
+            bristande och man har ofta egentligen ett val mellan att vara en
+            osjälvisk ängel eller en skitstövel.
+          </p>
+          <p>
+            Vid ett tilfälla träffade jag på en bugg som gjorde att jag fastnade
+            i ett steg, men jag kunde lätt ladda ner ett mod som löste det
+            problemet.
+          </p>
+        </section>
+        <!--section: spoilers-->
+        <section>
+          <h3>Spoilers</h3>
+          <details>
+            <summary>Visa/Göm</summary>
+            <p>
+              De andra följarna man kan rekrytera inkluderar:
+              <i>Sagacious Zu</i>, som är en före detta <i>Lotus Assassin</i>;
+              <i>Wild Flower</i>, en vandöd flicka som bebos av två olika
+              demoner, en god och en ond, Chai Ka och Ya Zhen; Sky, en mindre
+              tjuvaktig kille som vill hämnas hans dotters mord; Kang, en galen
+              uppfinnare; <i>Black Whirlwind</i>, en psykopatisk och något
+              korkad legosoldat; <i>Henpecked Hou</i>, en kock och före detta
+              kampsportare som försöker fly från sin förskräckliga fru; Silk
+              Fox, som egentligen är kejsarens dotter Sun Lian, och som gör
+              hemligt motstånd mot tyranniet i imperiet, när ni först möts
+              försöker hon döda en i tron att man är en agent för
+              <i>Lotus Assassins</i>. Man har mot slutet möjlighet till att
+              "rekrytera" <i>Death's Hand</i>, ledaren för
+              <i>Lotus Assassins</i>. I en sektion släss man sida-vid-sida med
+              spöket av ledaren för <i>Spirit Monk</i>-ordern. Dessutom kan man
+              interagera med Zin Bu, en funktionär i den himmelska byrokratin
+              som har fått i uppdrag att se till att du alltid har möjlighet att
+              köpa det du behöver, och som har bestämt sig för att göra detta
+              genom att direkt sälja dig saker.
+            </p>
+            <p>
+              Om man utför en serie sidouppdrag upptäcker man att Kang är en
+              mindre gud.
+            </p>
+            <p>
+              Om man interagerar med honom på rätt sätt under spelets gång
+              kommer <i>Sagacious Zu</i> att berätta om hur han var en av de som
+              sändes för att döda Lis familj efter att han förrådde kejsaren,
+              men han valde att inte döda Lis dotter, utan valde istället att
+              förråda sina kamrater. Detta leder senare till avslöjandet att
+              Dawn Star är Lis dotter, hon föddes efter Lis förräderi, vilket
+              innebar att de aldrig möttes förrens hon kom till Lis skola.
+            </p>
+            <p>
+              Mäster Li var inte den som räddade en från massakern, han stod på
+              Sun Hais sida. Men han ville sjäkv ha den kraft son de skulle
+              stjäla så han konspirerade med deras tredje broder - Sun Kin - att
+              döda Sun Hai och själva ta gudinnans kraft, men på grund av den
+              kraften överlevde Sun Hai, han dödade Sun Kin och tvingade Sun Li
+              till att fly. Han dödade då den överlevande munken som räddat dig
+              och tog hans plats i hopp om att kunna omvandla dig till ett vapen
+              mot Sun Hai. Sun Hai band då Sun Kins ande till Lis rustning och
+              magiskt förslavade honom, han blev då känd som
+              <i>Death's Hand</i>. Det här får du veta efter att du dödat Sun
+              Hai och Sun Li sedan dödat dig. Man blir sedan återupplevad av
+              <i>the Water Dragon</i> för att kunna frita henne. Men man kan
+              välja att istället ta hennes kraft för sig själv, och då ta över
+              imperiet.
+            </p>
+          </details>
+        </section>
+      </article>
+      <!--section för rimworld-->
+      <article>
+        <h2><cite>RimWorld</cite></h2>
+        <!--rimworld logga-->
+        <figure>
+          <img
+            src="./images/rimworldfinalcleanoutline.png"
+            alt="Loggan till RimWorld"
+            class="rimworld"
+          />
+          <figcaption>
+            Loggan till <cite>RimWorld</cite>. Från en offentlig Dropbox mapp
+            åtkomlig via
+            <a
+              href="https://ludeon.com/blog/faq/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ludeon Studios</a
+            >.
+          </figcaption>
+        </figure>
+        <!--länk till officiell sida-->
+        <p>
+          <a
+            href="https://rimworldgame.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >[officiell sida]</a
+          >
+        </p>
+        <!--section: beskrivning av spel-->
+        <section>
+          <h3>Vad är <cite>RimWorld</cite>?</h3>
+          <p>
+            <cite>RimWorld</cite> är ett spel där du tar kontroll öven en mindre
+            grupp karaktärer som blivit strandsatta på en planet. Spelet är 2D
+            och spelaren tittar rakt ner på området ens karaktärer befinner sig
+            i. Målet är att gruppen ska överleva, bygga en bas, och (för det
+            mesta) hitta ett sätt att ta sig av planeten. Spelet utspelar sig på
+            två olika skalor, en som täcker hela planeten och används när man
+            färdas en längre sträcka, och en liten som används för allt annat.
+          </p>
+          <p>
+            Spelet tar plats år 5500 och mänskligheten har spritt sig över ett
+            stort antal solsystem trots att man aldrig upptäckt något sätt att
+            färdas snabbare än ljuset, istället är vanligtvis alla personer
+            nedfrysta under längre färder. Planeten har invånare som varierar
+            mellan stenåldersstammar till avancerade rymdfarande civlisationer
+            och du kan ha olika (och varierande) relationer med var och en av
+            dessa grupper.
+          </p>
+        </section>
+        <!--section: vad jag gillade-->
+        <section>
+          <h3>Vad gillar jag om <cite>RimWorld</cite>?</h3>
+          <p>
+            Spelet har en väldigt detaljerad simulering av i stort sett allt.
+          </p>
+          <p>Du kan själv välja hur farlig du vill att världen ska vara.</p>
+        </section>
+        <!--section: vad jag inte gillade-->
+        <section>
+          <h3>Vad gillar jag inte om <cite>RimWorld</cite>?</h3>
+          <p>
+            Graden av detalj i spelet gör att det kan vara svårt att ta sig in
+            i.
+          </p>
+        </section>
+        <!--section: spoilers-->
+        <!--
+        <section>
+          <h3>Spoilers</h3>
+          <details>
+            <summary>Visa/Göm</summary>
+          </details>
+        </section>
+        -->
+      </article>
+      <!--section för EaW-->
+      <article>
+        <h2><cite>Star Wars: Empire at War</cite></h2>
+        <!--cover art-->
+        <figure>
+          <img
+            src="./images/Star_Wars_-_Empire_at_War.jpg"
+            alt="Omslagsbilden till Star Wars: Empire at War"
+            loading="lazy"
+          />
+          <figcaption>
+            Omslagsbilden till <cite>Star Wars: Empire at War</cite>. Från
+            <a
+              href="https://en.wikipedia.org/wiki/File:Star_Wars_-_Empire_at_War.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wikipedia</a
+            >.
+          </figcaption>
+        </figure>
+        <!--länk will engelsk wikipedia sida, verkar inte finnas någon egentlig officiell sida-->
+        <p>
+          <a
+            href="https://en.wikipedia.org/wiki/Star_Wars:_Empire_at_War#/languages"
+            target="_blank"
+            rel="noopener noreferrer"
+            >[engelsk wikipedia sida]</a
+          >
+        </p>
+        <!--section: beskrivning av spel-->
+        <section>
+          <h3>Vad är <cite>Empire at War</cite>?</h3>
+          <p>
+            <cite>Empire at War</cite> är ett strategispel som tar plats i
+            <cite>Star Wars</cite>-universumet inom tidsramen för
+            originaltriologin och som går ut på att man antingen kontrollerar
+            Imperiet eller Rebellerna och då ska besegra den andra sidan. Man
+            kan kontrollera slag både på marken och i rymden, men man kan också
+            låta datorn simulera slag helt själv. På den strategiska nivån
+            kontrollerar man ett antal planeter i galaxen, på vilka man kan
+            konstuera byggnader och enheter, som man sedan kan gruppera i
+            flottor och arméer som man skickar för att erövra nya planeter.
+          </p>
+          <!--om Forces of Corruption-->
+        </section>
+        <!--section: vad jag gillade-->
+        <section>
+          <h3>Vad gillar jag om <cite>Empire at War</cite>?</h3>
+          <p>
+            Det finns ett större antal mod som gör allt ifrån att lägga till nya
+            enheter till att göra om så att spelet tar plats i en annan tidpunkt
+            inom <cite>Star Wars</cite>-universumet till att göra om så att det
+            tar plats i ett annat universum.
+          </p>
+        </section>
+        <!--section: vad jag inte gillade-->
+        <section>
+          <h3>Vad gillar jag inte om <cite>Empire at War</cite>?</h3>
+          <p>
+            På den strategiska nivån kan man inte ge order om
+            truppförflyttningar då spelet är pausat.
+          </p>
+          <p>
+            Hur spelet fungerar på den strategiska nivån är inte egentligen
+            lämpat för att simulera striden mellan Imperiet och Rebellerna.
+          </p>
+        </section>
+        <!--section: spoilers-->
+        <!--
+        <section>
+          <h3>Spoilers</h3>
+          <details>
+            <summary>Visa/Göm</summary>
+          </details>
+        </section>
+        -->
+      </article>
+      <!--section för kotor-->
+      <article>
+        <h2><cite>Star Wars: Knights of the Old Republic</cite></h2>
+        <!--cover art-->
+        <figure>
+          <img
+            src="./images/Kotorbox.jpg"
+            alt="Omslagsbilden från Star Wars: Knights of the Old Republic"
+            loading="lazy"
+          />
+          <figcaption>
+            Omslagsbilden till
+            <cite>Star Wars: Knights of the Old Republic</cite>. Från
+            <a
+              href="https://en.wikipedia.org/wiki/File:Kotorbox.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wikipedia</a
+            >.
+          </figcaption>
+        </figure>
+        <!--länk till officiell sida-->
+        <p>
+          <a
+            href="https://www.starwars.com/games-apps/knights-of-the-old-republic"
+            target="_blank"
+            rel="noopener noreferrer"
+            >[officiell sida]</a
+          >
+        </p>
+        <!--section: beskrivning av spel-->
+        <section>
+          <h3>Vad är <cite>Knights of the Old Republic</cite>?</h3>
+          <p>
+            <cite>Knights of the Old Republic</cite> är ett datorrollspel i
+            <cite>Star Wars</cite>-universumet som tar plats cirka 4000 år före
+            filmerna, under ett krig mellan ett Sith-lett imperium och
+            Republiken.
+          </p>
+          <p>
+            Nyligen dog Sithorderns mästare - före detta Jediriddaren Darth
+            Revan - när en grupp Jediriddare och Republikanska trupper bordade
+            deras flaggskepp, då beordrade andremannen i Sithordern - före detta
+            Jediriddaren Darth Malak - sitt flaggskepp att beskjuta bryggan på
+            Revans flaggskepp för att döda både Revan och Jediriddarna, men
+            åtminstånde en av Jediriddarna - Bastila Shan, en padawan -
+            överlevde. Bastila är en utövare av en konst som kallas
+            stridsmeditation, som tillåter henne att använda Kraften för att
+            påverka utkomsten av hela slag. Malak har nu tagit kontroll över
+            Sithordern och dess imperium. Du spelar som en Republikansk soldat
+            ombord på krigsskeppet <i>Endar Spire</i>, som transporterar
+            Bastila, och som blir attackerat och förstört av Sithstyrkor ovanför
+            den Sithockuperade planeten Taris, till vilken Bastila, du, och att
+            antal andra besättningsmedlemmar lyckas ta sig. I samband med
+            flykten från Taris rekryteras ett antal följare och det upptäcks att
+            du är Kraftkänslig. Efter flykten färdas man till Jedienklaven på
+            planeten Dantooine, där det bestäms att du ska tränas som
+            Jediriddare, och att du, Bastila, samt resten av gruppen sedan ska
+            följa i Revans och Malaks fotspår i hopp om att upptäcka något sätt
+            att vinna kriget å Republikens vägnar.
+          </p>
+        </section>
+        <!--section: vad jag gillade-->
+        <section>
+          <h3>Vad gillar jag om <cite>Knights of the Old Republic</cite>?</h3>
+          <p>Jag tycker att spelets handling är väldigt engagerande.</p>
+          <p>
+            Under spelets gång finns det möjlighet till att ingå i en romantisk
+            relation med några av ens följare, två kvinnor och en man. Mannen
+            och en av kvinnorna är endast tillgängliga för kvinnliga karaktärer,
+            den andra kvinnan är endast tillgänglig för manliga karaktärer.
+          </p>
+        </section>
+        <!--section: vad jag inte gillade-->
+        <section>
+          <h3>
+            Vad gillar jag inte om <cite>Knights of the Old Republic</cite>?
+          </h3>
+          <p>
+            På grund av tidens attityder när spelet kom ut är den lesbiska
+            romansen mer subtil än de andra.
+          </p>
+        </section>
+        <!--section: spoilers-->
+        <section>
+          <h3>Spoilers</h3>
+          <details>
+            <summary>Visa/Göm</summary>
+            <p>
+              Mot slutet av spelet blir man tillfångatagen av Sithkrigsskeppet
+              <i>Leviathan</i>, där man får veta att Jedienklaven på Dantooine
+              har blivit förstörd. I samband med flykten från Leviathan dyker
+              Malak upp och avslöjar att man inte är någon namnlös Republikansk
+              soldat utan faktiskt Darth Revan, som räddades av Bastila - i
+              samband med när hon helade Revan skapades den Kraftförbindelse som
+              funnits mellan er under spelets gång - som sedan tillfångatog dem,
+              anledningen till att du inte minns detta är att dina minnen blev
+              utplånade, antingen när du nästan dog eller senare - det är därför
+              du under spelets gång fått syner av Revans förflutna. Bastila ger
+              sedan resten av gruppen en möjlighet till att fly genom att stanna
+              kvar och distrahera Malak. I spelets slutskede får man veta att
+              Bastila under hennes fångenskap fallit till den mörka sidan och nu
+              agerar å Malaks vägnar, man har då möjlighet att välja att
+              tillsammans med henne döda Malak och återta sin plats som
+              Sithorderns mästare och imperiets härskare. Om man väljer att inte
+              göra så kommer man att behöva slåss mot henne två gånger, och
+              under den andra striden har man möjlighet till att övertyga henne
+              att hon inte behöver dö utan kan återgå till ljusets sida.
+            </p>
+          </details>
+        </section>
+      </article>
+      <!--section för kotorn2-->
+      <article>
+        <h2>
+          <cite>Star Wars: Knights of the Old Republic II: The Sith Lords</cite>
+        </h2>
+        <!--cover art-->
+        <figure>
+          <img
+            src="./images/KOTOR_II.jpg"
+            alt="Omslagsbild från Star Wars: Knights of the Old Republic II: The Sith Lords"
+            loading="lazy"
+          />
+          <figcaption>
+            Omslagsbilden till
+            <cite
+              >Star Wars: Knights of the Old Republic II: The Sith Lords</cite
+            >. Från
+            <a
+              href="https://en.wikipedia.org/wiki/File:KOTOR_II.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wikipedia</a
+            >.
+          </figcaption>
+        </figure>
+        <!--länk till officiell sida-->
+        <p>
+          <a
+            href="https://www.obsidian.net/games/star-wars-knights-of-the-old-republic-ii-the-sith-lords"
+            target="_blank"
+            rel="noopener noreferrer"
+            >[officiell sida]</a
+          >
+        </p>
+        <!--section: beskrivning av spel-->
+        <section>
+          <h3>Vad är <cite>Knights of the Old Republic II</cite>?</h3>
+          <p>
+            <cite>Knights of the Old Republic II: The Sith Lords</cite> är ett
+            datorrollspel som är en uppföljare till
+            <cite>Knights of the Old Republic</cite> och tar plats cirka 5 år
+            efter det spelet.
+          </p>
+          <!--in-universe background information-->
+          <p>
+            Ungefär 8 år innan
+            <cite>Knights of the Old Republic</cite> invaderades Republiken av
+            Mandalorierna, och Republiken frågade då Jediordern om hjälp men
+            Jediordern valde att inte delta i kriget. Revan och Malak ledde då
+            en fraktion av Jediordern som valde att ändå delta i kriget. Efter 4
+            år av krig tog det sista stora slaget plats vid planeten Malchor V,
+            i detta slag kommenderades de Republikanska trupperna av en
+            Jediriddare som gav ordern att använda ett supervapen som dödade de
+            flesta av trupperna kring planeten, och splittrade själva planeter.
+            Denna Jediriddare var den enda av de som gick ut i krig som
+            återvände till Jediordern, och dömdes då till exil. Resten följde
+            Revan och Malak i att bli Sith.
+          </p>
+          <!--beskrivning av spelets handling-->
+          <p>
+            I <cite>Knights of the Old Republic II</cite> spelar man som denna
+            exil, som nu återvänder till Republiken. Man vaknar upp i
+            sjukavdelningen på gruvstationen i asteroidfältet Peragus utan att
+            veta hur man kom dit, alla andra i rummet är döda. I bårhuset möter
+            man en gammal kvinna med namnet Kreia, som beter sig väldigt
+            mystiskt. Från henne får du konfirmation om att din koppling till
+            Kraften - som försvann efter att kriget slutade och du exilerades -
+            har återvänt. Man fortsätter att utforska gruvstationen, och man
+            möter en man vid namnet Atton Rand inlåst i en cell och via
+            konversation med honom kan man bestämma hur
+            <cite>Knights of the Old Republic</cite> slutade. Från dessa två får
+            man veta vad som har hänt i galaxen sedan slutet av det förra
+            spelet, ens spelkaraktär från
+            <cite>Knights of the Old Republic</cite> försvann, imperiet föll
+            sönder, Republiken har svårigheter med att återhämta sig från
+            kriget, och Jediordern har krossats av gömda fiender som nu vill
+            döda dig. Med hjälp av dessa två samt en robot utforskar man resten
+            av gruvstationen, efter ett litet tag anländer ett krigsskepp med en
+            Sith ombord. Med några svårigheter lyckas ens grupp fly från
+            gruvstationen och krigsskeppet, och sätter kurs mot planeten Telos
+            IV, som förödades i det förra kriget. Vid Telos IV landar man på
+            <i>Citadel Station</i>, en massiv rymdstation ovanför planeten som
+            är nyckeln till projektet att återställa Telos IV, ombord blir man
+            arresterad av polisen i koppling till undersökningen om vad som
+            hände med gruvstationen. Efter att man frikänns får man veta att det
+            skepp som man flydde till stationen ombord har stulits, till slut
+            hittar man skeppet och upptäcker då att det stals av Atris, en av de
+            Jedimästare som exilerade en. I och med (eller efter) att man får
+            tillbaka skeppet får man veta att Atris vet var 4 andra Jedimästare
+            gömmer sig, och man ger sig då ut för att hitta dem, antingen för
+            att samla dem för att konfrontera Sithordern eller för att hämnas
+            ens exil genom att döda dem.
+          </p>
+        </section>
+        <!--section: vad jag gillade-->
+        <section>
+          <h3>
+            Vad gillar jag om <cite>Knights of the Old Republic II</cite>?
+          </h3>
+          <p>
+            Jag tycker att handlingen är väldigt engagerande. Jag blir även
+            engagerad i ens följares individuella berättelser.
+          </p>
+        </section>
+        <!--section: vad jag inte gillade-->
+        <section>
+          <h3>
+            Vad gillar jag inte om <cite>Knights of the Old Republic II</cite>?
+          </h3>
+          <p>
+            Man kan i början av spelet välja hur man vill at
+            <cite>Knights of the Old Republic</cite> slutade - spelade man en
+            manlig karaktär eller en kvinnlig, räddade man Republiken eller blev
+            man Sithorderns mästare - men vad man väljer har nästan ingen effekt
+            på spelets gång eller världen omkring en.
+          </p>
+          <p>
+            På grund av hur snabbt spelet utvecklades är det ganska mycket som
+            skars bort från det, men det finns mod som återställer stora delar
+            av det som skars bort. Det finns även buggar, till exempel har jag
+            stött på en där all dialog snabbspolades igenom och jag behövde
+            kolla upp den online för att veta vad det var som höll på att hända.
+          </p>
+        </section>
+        <!--section: spoilers-->
+        <section>
+          <h3>Spoilers</h3>
+          <details>
+            <summary>Visa/Göm</summary>
+            <p>
+              I spelets tidsperiod leds Sithordern av ett triumvirat av
+              Sithlorder: Darth Sion, som håller sig i liv med sin ilska och
+              därför inte kan dö, och som är den som kommer till Peragus; Darth
+              Nihilus, som kan suga allt liv från hela planeter; och Darth
+              Traya, som fåråddes av de andra två innan spelets början och som
+              även kallas Kreia, hon vill döda Kraften. Efter att hon föråddes
+              av de andra hittade hon dig och återställde din koppling till
+              Kraften i hopp om att upptäcka något som kunde hjälpa henne att
+              döda Kraften.
+            </p>
+            <p>
+              Efter slaget vid Malachor V skar du (något omedvetet) bort din
+              egna koppling till Kraften. Om du samlar de överlevande
+              Jedimästarna - förutom Atris som inte infinner sig - bestämmer de
+              sig för att döda dig eftersom du är ett "sår i Kraften," då kommer
+              Kreia och dödare dem innan hon ger sig iväg till var Atris gömmer
+              sig. När man följer henne dit upptäcker man att Atris har fallit
+              till den mörka sidan och omgett sig av Sithholokroner. Efter att
+              man besegrar Atris får man veta att Kreia färdats till Malachor V,
+              där det finns en gömd Sithakademi, Efter att man följer henne dit
+              och till sist besegrar henne slutar spelet antingen med att man
+              blir Sithordern nya mästare eller att man ger sig iväg för att
+              hitta Revan, beroende på om man står på mörkrets eller ljusets
+              sida.
+            </p>
+          </details>
+        </section>
+      </article>
+    </main>
+    <hr />
+    <!--footer med copyright-rad samt länk till kontakt-sida-->
+    <footer>
+      <p>© <i>2026 Ask Leijonhufvud</i></p>
+      <p class="contact-link">
+        <a href="./kontakt.html" class="contact-link">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>

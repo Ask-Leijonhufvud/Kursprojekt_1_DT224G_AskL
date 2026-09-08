@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asks Hemsida - Kontakt</title>
+    <!--CSS:
+    1. implementera mörkt läge
+    2. formatera kontakt-länk
+    3. formatera titel
+  -->
+    <style>
+      body {
+        background-color: black;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      summary {
+        color: white;
+      }
+
+      figcaption {
+        color: white;
+      }
+
+      th {
+        color: white;
+      }
+
+      td {
+        color: white;
+      }
+
+      a {
+        color: lightblue;
+      }
+
+      li {
+        color: white;
+      }
+
+      img[alt] {
+        color: white;
+      }
+
+      legend {
+        color: white;
+      }
+
+      label {
+        color: white;
+      }
+
+      .contact-link {
+        text-align: end;
+      }
+
+      select {
+        background-color: lightgrey;
+      }
+      textarea {
+        background-color: gray;
+      }
+
+      input {
+        background-color: gray;
+      }
+
+      ::placeholder {
+        color: white;
+      }
+
+      button {
+        background-color: gray;
+        color: white;
+      }
+
+      .titel {
+        font-size: larger;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header med titel, undertitel, och huvudmeny-->
+    <header>
+      <div>
+        <p class="titel">Asks Hemsida</p>
+        <p>Behold! My stuff!</p>
+      </div>
+      <!--huvudmeny; startar öppen, kan kollapsas; nuvarande sida ej länk, märkt med <b>-->
+      <nav>
+        <details open>
+          <summary><strong>Huvudmeny</strong></summary>
+          <menu>
+            <li><a href="./">Startsida</a></li>
+            <li><a href="./hobby.html">Hobby: Datorspel</a></li>
+            <li><b>Kontakt</b></li>
+          </menu>
+        </details>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!--
+            Kontaktsidan ska innehålla ett kontaktformulär samt en alternativ kontaktväg med länk till e-postadress. Sidan ska innehålla:
+                Ett kontaktformulär med:
+                    Minst tre olika typer av inputfält (t.ex. text, email, textarea, checkbox eller radio),
+                    Korrekt användning av <label> kopplat till respektive fält med for och id,
+                    Minst ett <fieldset> med <legend>,
+                    En skicka-knapp (<button type="submit">).
+
+                    Ett exempel kan vara fält för namn, e-post, meddelande och submit-knapp.
+
+                En kort introducerande text med en mailto:-länk, t.ex.:
+                    "Du kan också nå mig direkt på [student_id@student.miun.se]"
+            -->
+      <!--Outline:
+            form med ett fieldset, legend="Kontaktformulär"
+                select-lista, vad meddelandet gäller
+                textfält meddelande
+                    type="textarea"
+                    required
+                Meijladdress
+                    placeholder="e.g. c.julius.caesar-cccxv@senatus.spqr"
+                    required
+                submit-knapp
+            mailto-länk
+            -->
+      <h1>Kontaktsida</h1>
+      <form>
+        <fieldset>
+          <legend>Kontaktformulär</legend>
+          <!--gruppering för select-lista-->
+          <div>
+            <label for="subject">Gällande:</label>
+            <select name="subject" id="subject">
+              <option>Välj område</option>
+              <option>Jade Empire</option>
+              <option>RimWorld</option>
+              <option>SW: Empire at War</option>
+              <option>SW: KotOR</option>
+              <option>SW: KotOR II: TSL</option>
+            </select>
+          </div>
+          <!--gruppering för meddelande-->
+          <div>
+            <label for="message">Ditt meddelande:</label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="30"
+              placeholder="Femtonde mars är min favoritdag"
+              required
+            ></textarea>
+          </div>
+          <!--gruppering för mejladdress-->
+          <div>
+            <label for="email">Din mejladdress:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="c.julius.caesar@senatus.spqr"
+              required
+            />
+            <!--planerad email placeholder passar inte i 
+            standardstorleken, valde att skära ner 
+            placeholdern-->
+          </div>
+          <!--submit-knapp-->
+          <button type="submit">Skicka</button>
+        </fieldset>
+      </form>
+      <p>
+        Du kan också nå mig direkt via att mejla
+        <a href="mailto:asle2601@student.miun.se">asle2601@student.miun.se</a>.
+      </p>
+    </main>
+    <hr />
+    <!--footer med copyright-rad samt länk till kontakt-sida-->
+    <footer>
+      <p>© <i>2026 Ask Leijonhufvud</i></p>
+      <p class="contact-link">
+        <a href="./kontakt.html" class="contact-link">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>

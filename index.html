@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asks Hemsida</title>
+    <!--CSS:
+    1. implementera mörkt läge
+    2. formatera kontakt-länk
+    3. formatera titel
+  -->
+    <style>
+      body {
+        background-color: black;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      summary {
+        color: white;
+      }
+
+      figcaption {
+        color: white;
+      }
+
+      th {
+        color: white;
+      }
+
+      td {
+        color: white;
+      }
+
+      a {
+        color: lightblue;
+      }
+
+      li {
+        color: white;
+      }
+
+      img[alt] {
+        color: white;
+      }
+
+      .contact-link {
+        text-align: end;
+      }
+
+      .titel {
+        font-size: larger;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header med titel, undertitel, och huvudmeny-->
+    <header>
+      <div>
+        <p class="titel">Asks Hemsida</p>
+        <p>Behold! My stuff!</p>
+      </div>
+      <!--huvudmeny; startar öppen, kan kollapsas; nuvarande sida ej länk, märkt med <b>-->
+      <nav>
+        <details open>
+          <summary><strong>Huvudmeny</strong></summary>
+          <menu>
+            <li><b>Startsida</b></li>
+            <li><a href="./hobby.html">Hobby: Datorspel</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </menu>
+        </details>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!--
+            Startsidan ska innehålla en kort presentation av dig själv. Här berättar du vem du är, var du kommer ifrån och vad du är intresserad av. Sidan ska innehålla:
+                Minst två rubriknivåer (<h1>, <h2>);
+                Minst två paragrafer med text (<p>);
+                Minst en bild på dig själv eller något som representerar dig, med beskrivande alt-text.
+            -->
+      <!--outline:
+                1. Vem är Ask Leijonhufvud?
+                [profilbild med caption]
+                    1. (vem jag är, etc.)
+                    2. Intressen
+            -->
+      <h1>Vem är Ask Leijonhufvud?</h1>
+      <!--profilbild med caption-->
+      <figure>
+        <a
+          title="Biblioteca del Congreso Nacional de Chile, CC BY 3.0 CL &lt;https://creativecommons.org/licenses/by/3.0/cl/deed.en&gt;, via Wikimedia Commons"
+          href="https://commons.wikimedia.org/wiki/File:Salvador_Allende_Gossens-.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            width="250"
+            alt="Salvador Allende, Chiles president 1970-1973"
+            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Salvador_Allende_Gossens-.jpg/250px-Salvador_Allende_Gossens-.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+        /></a>
+        <figcaption>
+          Profilbild: porträttbild av Salvador Guillermo Allende Gossens, Chiles
+          president 1970-1973. Från Wikimedia. (bilden är en länk)
+        </figcaption>
+      </figure>
+      <!--section självbiografi-->
+      <section>
+        <h2>Självbiografi</h2>
+        <p>
+          Jag heter Ask Leijonhufvud (han/honom) och är född 2004. Jag bor i
+          Östersund och har levt i Jämtland större delen av mitt liv. Jag läste
+          Teknikvetenskap vid JGY Wargentin (och läste då även två valfria
+          programmeringskurser, den första i C++, den andra i C#). Jag började
+          sedan läsa Civilingenjör Rymdteknik vid Luleå Tekniska Universitet
+          (där jag läste ytterliggare en programmeringskurs, denna i C) men har
+          nu bytt till att läsa Webbutveckling vid Mittuniversitetet på distans.
+        </p>
+        <p>
+          Ja, du läste det där korrekt, jag har gått tre programmeringskurser
+          och ingen av dem var i samma språk (dock i närbesläktade språk).
+        </p>
+      </section>
+      <!--section Mina intressen-->
+      <section>
+        <h2>Mina intressen</h2>
+        <p>
+          På min fritid brukar jag antingen spela datorspel eller läsa. Jag
+          läser både fanfic och originalverk, t.ex. håller jag just nu på med
+          att läsa om boken
+          <cite>The Atrocity Archives</cite> skriven av Charles Stross som tar
+          inspiration av till exempel H.P. Lovecrafts verk och handlar om en av
+          de som arbetar inom den brittiska myndigheten som har i uppdrag att
+          hantera allt magiskt. Vad gäller datorspel föredrar jag rollspel,
+          strategispel, och liknande, dessutom spelar jag mer äldre spel än nya.
+          Jag spelar oftast på lägsta svårighetsnivån, jag spelar för att ha
+          kul, inte utmanas (det är inget fel med att spela spel för att
+          utmanas, med det är inte det som jag gör).
+        </p>
+        <!--skriv mer-->
+      </section>
+    </main>
+    <hr />
+    <!--footer med copyright-rad samt länk till kontakt-sida-->
+    <footer>
+      <p>© <i>2026 Ask Leijonhufvud</i></p>
+      <p class="contact-link">
+        <a href="./kontakt.html" class="contact-link">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>
