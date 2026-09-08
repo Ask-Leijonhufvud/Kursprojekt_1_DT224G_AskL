@@ -1,0 +1,57 @@
+body {
+  /* implementera mörkt läge */
+  background-color: black;
+  color: white;
+}
+
+/*mörkblå länkar syns inte jättebra mot svart bakgrund, byter till ljusblå*/
+a {
+  color: lightblue;
+}
+
+/*flytta kontakt-länk i footer till höger sida*/
+.contact-link {
+  text-align: end;
+}
+
+/*formatera titel*/
+.titel {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/*formatera table*/
+table {
+  border: 2px solid white;
+}
+td,
+th {
+  border: 1px solid white;
+}
+thead,
+tfoot {
+  background-color: gray;
+}
+tbody > tr:nth-of-type(even) {
+  background-color: gray;
+}
+
+/*formatera rimworld-logga*/
+.rimworld {
+  width: 256px;
+}
+
+/*formatera formulär*/
+::placeholder {
+  color: white;
+}
+textarea {
+  background-color: gray;
+}
+input {
+  background-color: gray;
+}
+button {
+  background-color: gray;
+  color: white;
+}
