@@ -13,7 +13,7 @@ HTML och CSS
 ## Länkar till publicerade versioner
 
 * [GitHub Pages](https://ask-leijonhufvud.github.io/Kursprojekt_1_DT224G_AskL/)
-* [Miun Webbhost](sftp://asle2601@studenter.miun.se/userhome/asle2601/public_html/dt224g_ask_leijonhufvud)
+* [sftp://asle2601@studenter.miun.se/userhome/asle2601/public_html/dt224g_ask_leijonhufvud](sftp://asle2601@studenter.miun.se/userhome/asle2601/public_html/dt224g_ask_leijonhufvud)
 
 ## Frågor och svar
 
